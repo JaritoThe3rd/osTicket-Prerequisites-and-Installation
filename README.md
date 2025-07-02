@@ -42,7 +42,7 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
      _This is more like a GPS routing system for the website it will literally identify cleanly map URL's._
 
    - **PHP 7.3.8 Non-Thread Safe (VC15, x86)**  
-     https://windows.php.net/downloads/releases/php-7.3.8-nts-Win32-VC15-x86.zip  
+     https://php.watch/versions/7.3/releases/7.3.8  
      _If osTicket is the software we're using then PHP is the language that runs the software._
 
    - **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**  
@@ -139,17 +139,32 @@ Finally review and create the Virtual Machine!!!
   - World Wide Web Services → Application Development Features → CGI
     
 ![image](https://github.com/user-attachments/assets/4613881d-469b-4efb-b118-d7265b74bc0c)
+![{B2D786BA-A7BF-41A0-9DEA-54F269BEB94F}](https://github.com/user-attachments/assets/090ce3b8-4011-442a-9fa9-30f414490d75)
 
 ---
 
-### 4. Install Prerequisites
+### 4. Install the following Prerequisites in proper order within your Virtual Machine.
 
-From the `osTicket-Installation-Files` folder, run:
+- **PHP Manager for IIS (v1.5.0)**  
+     https://github.com/RonaldCarter/PHPManager/releases/tag/V1.5.0
+     _Think about it as a BIOS interface for PHP where it let's you toggle the settings instead of scouring through the raw config files and manually editing them each which is a big hassle._
+  
+ - **URL Rewrite Module 2.1 (x64)**  
+     https://www.iis.net/downloads/microsoft/url-rewrite  
+     _This is more like a GPS routing system for the website it will literally identify cleanly map URL's._
 
-- PHP Manager for IIS (`PHPManagerForIIS_V1.5.0.msi`)
-- URL Rewrite Module (`rewrite_amd64_en-US.msi`)
-- VC++ Redistributable (`VC_redist.x86.exe`)
+ - Create a directory in C:\PHP of your virtual machine
 
+   ![{778D91C9-C03A-4B88-A1FE-E5E7C1B7D5FC}](https://github.com/user-attachments/assets/3576a598-40df-477e-a6d3-b786d113cf3b)
+   
+ - Then download and extract the file to your C:\PHP virtual machine folder
+
+   - **PHP 7.3.8 Non-Thread Safe (VC15, x86)**  
+     https://php.watch/versions/7.3/releases/7.3.8  
+     _If osTicket is the software we're using then PHP is the language that runs the software._
+
+     
+   
 ---
 
 ### 5. Set Up PHP

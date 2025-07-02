@@ -55,19 +55,25 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     
     -> https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi
 
-    ""
+    "It's basically the storage and filing system where it stores all the tickets, users, logs, and settings."
     
   - **Microsoft Visual C++ Redistributable 2015 (x86)**
     
     -> https://www.microsoft.com/en-us/download/details.aspx?id=48145
+
+    "This is a device driver for PHP and MySQL that will make everything run well together."
     
   - **osTicket v1.15.8**
     
     -> https://osticket.com/osticket-v1-15-8-v1-16-3-available/
+
+    "Main software that will run everything"
     
   - **HeidiSQL (Latest Stable Installer)**
     
     -> https://www.heidisql.com/download.php
+
+    "Instead of using command-like SQL, it gives you a GUI to create databases and manage data it's basically similar to file explorer, but for MySQL."
     
 
 <h2>Installation Steps</h2>

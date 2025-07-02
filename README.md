@@ -142,17 +142,24 @@ Finally review and create the Virtual Machine!!!
 
 ![image](https://github.com/user-attachments/assets/cb668e09-6d85-4a7d-80cd-ec0a35400e5f)
 
+
 - Then select "Turn Windows features on or off"
 
+
   ![{6AF31233-70B6-42BB-9448-478B447B2334}](https://github.com/user-attachments/assets/ddc81e83-9de4-4b85-9465-b49f0831475c)
+
 
 - Scroll Through "Internet Information Services (IIS)"
 - Enable:
   - Internet Information Services (IIS)
   - World Wide Web Services → Application Development Features → CGI
+
     
 ![image](https://github.com/user-attachments/assets/4613881d-469b-4efb-b118-d7265b74bc0c)
+
+
 ![{B2D786BA-A7BF-41A0-9DEA-54F269BEB94F}](https://github.com/user-attachments/assets/090ce3b8-4011-442a-9fa9-30f414490d75)
+
 
 ---
 
@@ -168,7 +175,9 @@ Finally review and create the Virtual Machine!!!
 
  - Create a directory in C:\PHP of your virtual machine
 
+
    ![{778D91C9-C03A-4B88-A1FE-E5E7C1B7D5FC}](https://github.com/user-attachments/assets/3576a598-40df-477e-a6d3-b786d113cf3b)
+
    
  - Then download and extract the file to your C:\PHP virtual machine folder
 

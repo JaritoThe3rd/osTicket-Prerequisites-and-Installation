@@ -119,14 +119,26 @@ Finally review and create the Virtual Machine!!!
   ![{4C9AAE25-A6AA-47AE-AC25-604294503557}](https://github.com/user-attachments/assets/49e13879-c534-4f06-93df-ba5704958d52)
 
 - Then select both the "Don't ask me again for connection to this computer" and "Yes"
+- Then proceed to interact and navigate as you're starting out your new Virtual Machine
+
 ---
 
-### 3. Enable IIS with CGI Support
+### 3. Enable IIS with CGI Support within your Virtual Machine
 
-- Go to "Turn Windows features on or off"
+- Navigate towards the Control Panel and Select Programs
+
+![image](https://github.com/user-attachments/assets/cb668e09-6d85-4a7d-80cd-ec0a35400e5f)
+
+- Then select "Turn Windows features on or off"
+
+  ![{6AF31233-70B6-42BB-9448-478B447B2334}](https://github.com/user-attachments/assets/ddc81e83-9de4-4b85-9465-b49f0831475c)
+
+- Scroll Through "Internet Information Services (IIS)"
 - Enable:
   - Internet Information Services (IIS)
   - World Wide Web Services → Application Development Features → CGI
+    
+![image](https://github.com/user-attachments/assets/4613881d-469b-4efb-b118-d7265b74bc0c)
 
 ---
 

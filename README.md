@@ -31,17 +31,27 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 4. Remote Desktop Client (Azure will provide a client file if you're connecting to the VM)
 5. osTicket Requirements
-  - ### Download Links
-
-| Filename                              | Source                                         |
-|---------------------------------------|------------------------------------------------|
-| PHP Manager for IIS (.msi)            | Official IIS Community download :contentReference[oaicite:23]{index=23} |
-| URL Rewrite Module 2.1 (x64 .msi)    | Official IIS download :contentReference[oaicite:24]{index=24} |
-| PHP 7.3.8 NTS (x86) zip               | windows.php.net archive :contentReference[oaicite:25]{index=25} |
-| MySQL 5.5.62 Windows MSI              | mysql.com archive mirror :contentReference[oaicite:26]{index=26} |
-| VC++ 2015 Redistributable (x86)       | Microsoft download page :contentReference[oaicite:27]{index=27} |
-| osTicket v1.15.8 zip                 | osTicket official site :contentReference[oaicite:28]{index=28} |
-| HeidiSQL installer                   | HeidiSQL official site :contentReference[oaicite:29]{index=29} |
+  - **PHP Manager for IIS (v1.5.0)**
+    -> https://www.iis.net/downloads/community/2018/05/php-manager-150-for-iis-10
+    "Similar to"
+  - **URL Rewrite Module 2.1 (x64)**
+    -> https://www.iis.net/downloads/microsoft/url-rewrite
+    
+  - **PHP 7.3.8 Non-Thread Safe (VC15, x86)**
+    -> https://windows.php.net/downloads/releases/php-7.3.8-nts-Win32-VC15-x86.zip
+    
+  - **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**
+    -> https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi
+    
+  - **Microsoft Visual C++ Redistributable 2015 (x86)**
+    -> https://www.microsoft.com/en-us/download/details.aspx?id=48145
+    
+  - **osTicket v1.15.8**
+    -> https://osticket.com/osticket-v1-15-8-v1-16-3-available/
+    
+  - **HeidiSQL (Latest Stable Installer)**
+    -> https://www.heidisql.com/download.php
+    
 
 <h2>Installation Steps</h2>
 

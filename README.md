@@ -76,9 +76,18 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 - Username: labuser
 - Password: osTicketPassword1!
 
-![{47B9C472-6BBD-4D42-BB83-9D112ECD51A4}](https://github.com/user-attachments/assets/5b1a401f-0745-4a95-b42f-c7c78cb8c267)
+![{88030348-784F-40BE-8F33-CDBC6AD5C14F}](https://github.com/user-attachments/assets/67574a01-0517-4c97-9d6d-6f9e2eb6f37c)
 
-Now onto the next section of Virtual Machine creation "Networking"
+
+
+Now onto the next section skip the "Disk" of Virtual Machine creation goto "Networking" section 
+
+-Create a new Virtual Network called "osticket-vm-vnet" it should automatically make it for you similarly for Public IP.
+
+![{B1691694-33F8-4B1F-9B3D-B77213E20AF2}](https://github.com/user-attachments/assets/b54d1079-afcd-415e-acf6-75b4122503b2)
+
+Finally review and create the Virtual Machine!!!
+
 ---
 
 ### 2. Connect to the VM

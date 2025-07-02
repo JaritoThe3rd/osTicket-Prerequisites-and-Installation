@@ -109,11 +109,16 @@ Finally review and create the Virtual Machine!!!
   
   ![{2E1BA7B0-39D3-45CE-9D34-97458295025F}](https://github.com/user-attachments/assets/cc092821-de8f-49ee-8a97-06c712d1ab64)
 
-- Select the downloaded RDP client file
+- Select the downloaded RDP client file from the download section of your browser
   
   ![{435A76CA-6CD4-41D3-AC52-C8C9AB10F94E}](https://github.com/user-attachments/assets/8f84a109-1b23-4faa-b7c5-00c79830ea5b)
-  
 
+- You can select "Don't ask me again for connection to this computer" then connect and log in to your username and password
+
+  ![{573B5319-0F9B-4C72-ABB7-30F0985852CE}](https://github.com/user-attachments/assets/0e953fa4-10a4-4dfe-8fb9-7159ad65cd40)
+  ![{4C9AAE25-A6AA-47AE-AC25-604294503557}](https://github.com/user-attachments/assets/49e13879-c534-4f06-93df-ba5704958d52)
+
+- Then select both the "Don't ask me again for connection to this computer" and "Yes"
 ---
 
 ### 3. Enable IIS with CGI Support

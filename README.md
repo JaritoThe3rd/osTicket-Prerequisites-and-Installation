@@ -365,12 +365,12 @@ Finally review and create the Virtual Machine!!!
 ### 11. Set Up the Database
 
   - **HeidiSQL (Latest Stable Installer)**  
-     https://www.heidisql.com/download.php  
+     https://www.npackd.org/p/heidisql/12.3.0.6589  
      _Instead of using command-like SQL, it gives you a GUI to create databases and manage data it's basically similar to file explorer, but for MySQL._
 
     
 1. Install HeidiSQL and after that we're making a setup for our osTicket Database
-2. Open and create a new session:
+2. Open and create a new session: (There's a chance that even if you input the right USERNAME and PASSWORD that the virtual machine needs to be restarted since that database is not really established yet.)
    - Username: `tool`
    - Password: `tool`
 

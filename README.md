@@ -52,7 +52,9 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 - Virtual Machine Name: Name it as "osticket-vm"
 - Region: I choose East US 2 (That totally depends where you are in the world pick ones that are the closest to your region obviously)
 - Image: Windows 10 Pro, version 22H2 - x64 Gen2 (Please don't do Windows 11 since the tutorial mainly focuses on Windows 10)
-- Size: Standard_D2s_v3 - 2 vcpus, 8 GiB memory ($70.08/month) (The montly fee only charges you if you run it 24/7 as long as you turned it off after each use you're fine. Unless if you're working with corporations)
+- Size: Standard_D2s_v3 - 2 vcpus, 8 GiB memory ($70.08/month) (The monthly fee only charges you if you run it 24/7 as long as you turned it off after each use you're fine. Unless if you're working with corporations)
+
+  
 - Username: labuser
 - Password: osTicketPassword1!
 - Make sure to check the box for Licensing at the very bottom of the first section of virtual machine creation.
@@ -193,10 +195,11 @@ Finally review and create the Virtual Machine!!!
 1. Run the file that you just downloaded `mysql-5.5.62-win32.msi`
 2. Choose Typical Setup
 3. After install, run Configuration Wizard
-4. Use Standard Configuration
+4. Use Standard Configuration then Install as Window service
 5. Credentials: (Reason we have similar user and pass is to avoid errors)
    - Username: `tool`
    - Password: `tool`
+6. Then Execute
 
 - **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**  
      https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi  

@@ -2,9 +2,11 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation via Microsoft Azure using their Cloud Computing Services</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+# 🎫 osTicket Installation on Azure Windows 10 VM
 
+This is a walkthrough on installing **osTicket**, a popular open-source help desk ticketing system, ideally on a **Windows 10 virtual machine using Microsoft Azure Services**. This will help you understand and demonstrate on your skills in cloud infrastructure, Windows server configuration, and web-based application deployment - all of which are relevant for Help Desk and Cloud roles.
+
+---
 
 <h2>Video Demonstration</h2>
 
@@ -75,12 +77,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
     "Instead of using command-like SQL, it gives you a GUI to create databases and manage data it's basically similar to file explorer, but for MySQL."
     
-
-# 🎫 osTicket Installation on Azure Windows 10 VM
-
-This tutorial walks you through installing **osTicket**, a popular open-source help desk ticketing system, on a **Windows 10 virtual machine hosted on Microsoft Azure**. This project demonstrates my skills in cloud infrastructure, Windows server configuration, and web-based application deployment — all of which are relevant for Help Desk and Cloud roles.
-
----
 
 ## 💻 What You'll Need
 

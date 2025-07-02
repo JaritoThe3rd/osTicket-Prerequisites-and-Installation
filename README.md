@@ -76,28 +76,210 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     "Instead of using command-like SQL, it gives you a GUI to create databases and manage data it's basically similar to file explorer, but for MySQL."
     
 
-<h2>Installation Steps</h2>
+# 🎫 osTicket Installation on Azure Windows 10 VM
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+This tutorial walks you through installing **osTicket**, a popular open-source help desk ticketing system, on a **Windows 10 virtual machine hosted on Microsoft Azure**. This project demonstrates my skills in cloud infrastructure, Windows server configuration, and web-based application deployment — all of which are relevant for Help Desk and Cloud roles.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+---
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+## 💻 What You'll Need
+
+- A **Microsoft Azure account**
+- Basic knowledge of RDP and Windows OS
+- A copy of the required installation files:
+  - PHP Manager for IIS
+  - Rewrite Module
+  - PHP 7.3.8 (Non-Thread Safe)
+  - MySQL 5.5.62
+  - VC++ Redistributable 2015 (x86)
+  - osTicket v1.15.8
+  - HeidiSQL
+
+🔗 [Click here for download links and file explanations](#📁-required-files--downloads)
+
+---
+
+## ⚙️ Step-by-Step Setup Guide
+
+### 1️⃣ Create an Azure Virtual Machine
+
+- OS: **Windows 10**
+- Size: **4 vCPUs** or higher (B2ms works well)
+- Name: `osticket-vm`
+- Username: `labuser`
+- Password: `osTicketPassword1!`
+
+> 🟢 Open port **3389** (for Remote Desktop) and **80** (for the osTicket website)
+
+---
+
+### 2️⃣ Connect to the VM
+
+- Use Remote Desktop (RDP) to log in using the credentials above
+
+---
+
+### 3️⃣ Prepare the Setup Files
+
+- Inside the VM, download and extract `osTicket-Installation-Files.zip` to the desktop
+- The folder should be named: `osTicket-Installation-Files`
+
+---
+
+### 4️⃣ Enable IIS with CGI Support
+
+1. Open **“Turn Windows Features on or off”**
+2. Enable:
+   - ✅ Internet Information Services (IIS)
+   - ✅ World Wide Web Services → Application Development Features → ✅ CGI
+
+---
+
+### 5️⃣ Install Prerequisites
+
+From the `osTicket-Installation-Files` folder, run the following installers:
+
+- 🟢 **PHP Manager for IIS** (`PHPManagerForIIS_V1.5.0.msi`)
+- 🟢 **URL Rewrite Module** (`rewrite_amd64_en-US.msi`)
+- 🟢 **VC++ Redistributable** (`VC_redist.x86.exe`)
+
+---
+
+### 6️⃣ Set Up PHP
+
+1. Create a new folder: `C:\PHP`
+2. Extract `php-7.3.8-nts-Win32-VC15-x86.zip` into `C:\PHP`
+3. Open **IIS Manager as Administrator**
+4. Use PHP Manager to **register PHP**:
+   - Set executable path: `C:\PHP\php-cgi.exe`
+5. Restart IIS (Stop and Start the server)
+
+---
+
+### 7️⃣ Install MySQL
+
+1. Run `mysql-5.5.62-win32.msi`
+2. Choose **Typical Setup**
+3. After install, launch the **Configuration Wizard**
+4. Use **Standard Configuration**
+5. Set credentials:
+   - Username: `root`
+   - Password: `root`
+
+---
+
+### 8️⃣ Deploy osTicket Files
+
+1. Extract `osTicket-v1.15.8.zip`
+2. Copy the `upload` folder into: `C:\inetpub\wwwroot`
+3. Rename `upload` to: `osTicket`
+4. Restart IIS again
+
+---
+
+### 9️⃣ Open osTicket in Browser
+
+1. In IIS Manager:
+   - Go to **Sites > Default Web Site > osTicket**
+   - On the right panel, click: **Browse *:80**
+2. This will open osTicket in your browser (`http://localhost/osTicket`)
+
+---
+
+### 🔌 Enable PHP Extensions
+
+1. In IIS > osTicket > **PHP Manager**
+2. Click “Enable or disable an extension”
+3. Enable these:
+   - `php_imap.dll`
+   - `php_intl.dll`
+   - `php_opcache.dll`
+4. Refresh the browser — the missing extension warnings should disappear
+
+---
+
+### 🔧 Rename and Secure Config File
+
+1. Rename:
+   - From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`
+   - To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`
+2. Set permissions:
+   - Right-click `ost-config.php` → Properties → Security
+   - Disable inheritance → Remove all existing
+   - Add user: **Everyone** → Grant **Full Control**
+
+---
+
+### 🛠️ Set Up the Database
+
+1. Install **HeidiSQL**
+2. Open it and create a new session:
+   - Username: `root`
+   - Password: `root`
+3. Connect and create a database named: `osTicket`
+
+---
+
+### 🌐 Finalize osTicket Setup in Browser
+
+1. Go back to `http://localhost/osTicket`
+2. Fill in:
+   - Helpdesk name
+   - Admin account
+   - Default email address
+3. For the database section:
+   - DB Name: `osTicket`
+   - DB User: `root`
+   - DB Password: `root`
+4. Click **Install Now**
+
+> ✅ If everything worked, you’ll get a success message!
+
+---
+
+## 🔐 Post-Install Cleanup
+
+1. Delete the folder:  
+   `C:\inetpub\wwwroot\osTicket\setup`
+2. Change permissions of `ost-config.php` to **Read-only**
+
+---
+
+## 🚪 Access Links
+
+- 🛠️ Admin Portal: `http://localhost/osTicket/scp/login.php`  
+- 🧾 User Portal: `http://localhost/osTicket/`
+
+---
+
+## 📁 Required Files & Downloads
+
+| Tool | Purpose | Download |
+|------|---------|----------|
+| PHP Manager for IIS | Helps IIS detect & manage PHP | [Download](https://www.iis.net/downloads/community/2018/05/php-manager-150-for-iis-10) |
+| URL Rewrite Module | Enables clean URLs in IIS | [Download](https://www.iis.net/downloads/microsoft/url-rewrite) |
+| PHP 7.3.8 NTS | osTicket runs on PHP | [Download](https://windows.php.net/downloads/releases/php-7.3.8-nts-Win32-VC15-x86.zip) |
+| MySQL 5.5.62 | Stores all ticket data | [Download](https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi) |
+| VC++ 2015 (x86) | Required by PHP & MySQL | [Download](https://www.microsoft.com/en-us/download/details.aspx?id=48145) |
+| osTicket v1.15.8 | Main help desk software | [Download](https://osticket.com/osticket-v1-15-8-v1-16-3-available/) |
+| HeidiSQL | GUI for managing MySQL | [Download](https://www.heidisql.com/download.php) |
+
+---
+
+## ✅ Why This Project Matters
+
+- ✅ Shows ability to deploy full-stack web applications
+- ✅ Demonstrates cloud VM provisioning and access control
+- ✅ Hands-on with IIS, PHP, MySQL — real tools in IT environments
+- ✅ Aligns with Help Desk, SysAdmin, and Cloud Support roles
+
+---
+
+## 🎥 Optional: Video Demonstration
+
+> *(Include YouTube or Loom link if recorded)*
+
+---
+
+Let me know if you'd like a Markdown badge pack, media section, or example screenshots added!
+

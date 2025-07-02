@@ -34,7 +34,6 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 
 4. Remote Desktop Client (Azure will provide a client file if you're connecting to the VM)
 5. osTicket Requirements
-
    
   - **PHP Manager for IIS (v1.5.0)**
     
@@ -101,12 +100,6 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 
 ---
 
-### 3️⃣ Prepare the Setup Files
-
-- Inside the VM, download and extract `osTicket-Installation-Files.zip` to the desktop
-- The folder should be named: `osTicket-Installation-Files`
-
----
 
 ### 4️⃣ Enable IIS with CGI Support
 
@@ -234,34 +227,10 @@ From the `osTicket-Installation-Files` folder, run the following installers:
 
 ---
 
-## 📁 Required Files & Downloads
-
-| Tool | Purpose | Download |
-|------|---------|----------|
-| PHP Manager for IIS | Helps IIS detect & manage PHP | [Download](https://www.iis.net/downloads/community/2018/05/php-manager-150-for-iis-10) |
-| URL Rewrite Module | Enables clean URLs in IIS | [Download](https://www.iis.net/downloads/microsoft/url-rewrite) |
-| PHP 7.3.8 NTS | osTicket runs on PHP | [Download](https://windows.php.net/downloads/releases/php-7.3.8-nts-Win32-VC15-x86.zip) |
-| MySQL 5.5.62 | Stores all ticket data | [Download](https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi) |
-| VC++ 2015 (x86) | Required by PHP & MySQL | [Download](https://www.microsoft.com/en-us/download/details.aspx?id=48145) |
-| osTicket v1.15.8 | Main help desk software | [Download](https://osticket.com/osticket-v1-15-8-v1-16-3-available/) |
-| HeidiSQL | GUI for managing MySQL | [Download](https://www.heidisql.com/download.php) |
-
----
-
 ## ✅ Why This Project Matters
 
 - ✅ Shows ability to deploy full-stack web applications
 - ✅ Demonstrates cloud VM provisioning and access control
 - ✅ Hands-on with IIS, PHP, MySQL — real tools in IT environments
 - ✅ Aligns with Help Desk, SysAdmin, and Cloud Support roles
-
----
-
-## 🎥 Optional: Video Demonstration
-
-> *(Include YouTube or Loom link if recorded)*
-
----
-
-Let me know if you'd like a Markdown badge pack, media section, or example screenshots added!
 

@@ -8,12 +8,6 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 
 ---
 
-## Video Demonstration
-
-- [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
----
-
 ## Environments and Technologies Used
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -38,6 +32,7 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
    - Password: `osTicket`
 4. Remote Desktop Client
 5. osTicket Requirements:
+   
    - **PHP Manager for IIS (v1.5.0)**  
      https://www.iis.net/downloads/community/2018/05/php-manager-150-for-iis-10  
      _Think about it as a BIOS interface for PHP where it let's you toggle the settings instead of scouring through the raw config files and manually editing them each which is a big hassle._
@@ -72,13 +67,18 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 
 ### 1. Create an Azure Virtual Machine
 
-- OS: Windows 10
-- Size: 4 vCPUs (e.g., B2ms)
-- Name: `osticket-vm`
-- Username: `labuser`
-- Password: `osTicketPassword1!`
-- Open ports: 3389 (RDP) and 80 (HTTP)
+- Subscription: I recommend pay-as-you-go or the monthly plan (Make sure you don't run the VM's 24/7 or else the cost will skyrocket)
+- Resource Group: Create a new Resource group called "osTicket" (We're basically isolating our work in sections particularly a resource group)
+- Virtual Machine Name: Name it as "osticket-vm"
+- Region: I choose East US 2 (That totally depends where you are in the world pick ones that are the closest to your region obviously)
+- Image: Windows 10 Pro, version 22H2 - x64 Gen2 (Please don't do Windows 11 since the tutorial mainly focuses on Windows 10)
+- Size: Standard_D2s_v3 - 2 vcpus, 8 GiB memory ($70.08/month) (The montly fee only charges you if you run it 24/7 as long as you turned it off after each use you're fine. Unless if you're working with corporations)
+- Username: labuser
+- Password: osTicketPassword1!
 
+![{47B9C472-6BBD-4D42-BB83-9D112ECD51A4}](https://github.com/user-attachments/assets/5b1a401f-0745-4a95-b42f-c7c78cb8c267)
+
+Now onto the next section of Virtual Machine creation "Networking"
 ---
 
 ### 2. Connect to the VM

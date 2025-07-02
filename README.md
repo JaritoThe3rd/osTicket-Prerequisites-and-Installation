@@ -34,32 +34,12 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 5. osTicket Requirements:
    
    - **PHP Manager for IIS (v1.5.0)**  
-     https://www.iis.net/downloads/community/2018/05/php-manager-150-for-iis-10  
-     _Think about it as a BIOS interface for PHP where it let's you toggle the settings instead of scouring through the raw config files and manually editing them each which is a big hassle._
-
    - **URL Rewrite Module 2.1 (x64)**  
-     https://www.iis.net/downloads/microsoft/url-rewrite  
-     _This is more like a GPS routing system for the website it will literally identify cleanly map URL's._
-
    - **PHP 7.3.8 Non-Thread Safe (VC15, x86)**  
-     https://php.watch/versions/7.3/releases/7.3.8  
-     _If osTicket is the software we're using then PHP is the language that runs the software._
-
-   - **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**  
-     https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi  
-     _It's basically the storage and filing system where it stores all the tickets, users, logs, and settings._
-
    - **Microsoft Visual C++ Redistributable 2015 (x86)**  
-     https://www.microsoft.com/en-us/download/details.aspx?id=48145  
-     _This is a device driver for PHP and MySQL that will make everything run well together._
-
+   - **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**  
    - **osTicket v1.15.8**  
-     https://osticket.com/osticket-v1-15-8-v1-16-3-available/  
-     _The main software help desk web application that connects everything that you've installed._
-
    - **HeidiSQL (Latest Stable Installer)**  
-     https://www.heidisql.com/download.php  
-     _Instead of using command-like SQL, it gives you a GUI to create databases and manage data it's basically similar to file explorer, but for MySQL._
 
 ---
 
@@ -178,7 +158,16 @@ Finally review and create the Virtual Machine!!!
 
    ![{778D91C9-C03A-4B88-A1FE-E5E7C1B7D5FC}](https://github.com/user-attachments/assets/3576a598-40df-477e-a6d3-b786d113cf3b)
 
-   
+
+### 5. Set Up PHP
+
+1. Create a folder: `C:\PHP`
+2. Extract or copy and paste `php-7.3.8-nts-Win32-VC15-x86.zip` into `C:\PHP`
+3. Open IIS Manager (as Administrator)
+4. Use PHP Manager to register PHP:
+   - Path: `C:\PHP\php-cgi.exe`
+5. Restart IIS (Stop/Start the server)
+
  - Then download and extract the file to your C:\PHP virtual machine folder
 
    - **PHP 7.3.8 Non-Thread Safe (VC15, x86)**  
@@ -190,29 +179,28 @@ Finally review and create the Virtual Machine!!!
 
    ![image](https://github.com/user-attachments/assets/8bb1f723-37a1-4972-ae31-7ed71c512a9a)
 
-   
----
 
-### 5. Set Up PHP
+ - Similarly with visual studio
 
-1. Create a folder: `C:\PHP`
-2. Extract `php-7.3.8-nts-Win32-VC15-x86.zip` into `C:\PHP`
-3. Open IIS Manager (as Administrator)
-4. Use PHP Manager to register PHP:
-   - Path: `C:\PHP\php-cgi.exe`
-5. Restart IIS (Stop/Start the server)
+   - **Microsoft Visual C++ Redistributable 2015 (x86)**  
+     https://www.microsoft.com/en-us/download/details.aspx?id=48145  
+     _This is a device driver for PHP and MySQL that will make everything run well together._
 
 ---
 
 ### 6. Install MySQL
 
-1. Run `mysql-5.5.62-win32.msi`
+1. Run the file that you just downloaded `mysql-5.5.62-win32.msi`
 2. Choose Typical Setup
 3. After install, run Configuration Wizard
 4. Use Standard Configuration
-5. Credentials:
-   - Username: `root`
-   - Password: `root`
+5. Credentials: (Reason we have similar user and pass is to avoid errors)
+   - Username: `tool`
+   - Password: `tool`
+
+- **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**  
+     https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi  
+     _It's basically the storage and filing system where it stores all the tickets, users, logs, and settings._
 
 ---
 
@@ -244,6 +232,11 @@ Finally review and create the Virtual Machine!!!
    - `php_opcache.dll`
 4. Refresh osTicket in your browser
 
+     - **osTicket v1.15.8**  
+     https://osticket.com/osticket-v1-15-8-v1-16-3-available/  
+     _The main software help desk web application that connects everything that you've installed._
+
+
 ---
 
 ### 10. Rename and Secure Config File
@@ -264,6 +257,12 @@ Finally review and create the Virtual Machine!!!
    - Username: `root`
    - Password: `root`
 3. Connect and create a new database called: `osTicket`
+
+
+   - **HeidiSQL (Latest Stable Installer)**  
+     https://www.heidisql.com/download.php  
+     _Instead of using command-like SQL, it gives you a GUI to create databases and manage data it's basically similar to file explorer, but for MySQL._
+
 
 ---
 

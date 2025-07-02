@@ -310,8 +310,39 @@ Finally review and create the Virtual Machine!!!
    - From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`
    - To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`
 2. Set permissions:
-   - Disable inheritance, remove all users
-   - Add `Everyone` with Full Control
+
+3. Right click the file `ost-config.php` then select properties.
+
+   
+![image](https://github.com/user-attachments/assets/04f98e9b-8b4e-42f9-9173-9a72244c3407)
+   
+4. Then "Security" and select "Advance"
+
+
+![image](https://github.com/user-attachments/assets/1d2fdb01-988b-49b1-9d31-6903da7b32fb)
+
+5. Disable inheritance, remove all users
+
+
+![image](https://github.com/user-attachments/assets/7fcafc35-7bc4-4cce-b775-b758e7449d9c)
+
+
+6. Select Remove all
+
+
+![{94A66D8D-0CD3-4FAB-9BB3-CC1E66719B46}](https://github.com/user-attachments/assets/fc353b04-cc47-49fb-baff-a9779edf3819)
+
+7. Select "Add" then on the top left select "Select a principal" then type within the box "everyone"
+
+   
+![image](https://github.com/user-attachments/assets/f08e4476-e87f-4b36-a17e-e57c2bfab2af)
+
+
+8. After adding `Everyone` check the box that says "Full Control"
+
+   
+![image](https://github.com/user-attachments/assets/3b281775-3330-47d2-9c72-09157d241291)
+
 
 ---
 

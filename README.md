@@ -165,15 +165,31 @@ Finally review and create the Virtual Machine!!!
 
 1. Create a folder: `C:\PHP`
 2. Extract or copy and paste `php-7.3.8-nts-Win32-VC15-x86.zip` into `C:\PHP`
-3. Open IIS Manager (as Administrator)
-4. Use PHP Manager to register PHP:
+3. Open IIS Manager from your windows search bar by typing "IIS" (as Administrator)
+
+4. Select PHP Manager
+
+
+![{79F09B67-629A-4793-90A2-9DA120DF4C22}](https://github.com/user-attachments/assets/9da57d71-df45-4f3f-995c-37bd80d7d7d5)
+
+
+5. Use PHP Manager to register PHP by browsing the file "php-cgi.exe":
+
+![image](https://github.com/user-attachments/assets/956cc205-b29b-4922-8cc4-9d0dc6948bef)
+
+
    - Path: `C:\PHP\php-cgi.exe`
-5. Restart IIS (Stop/Start the server)
+
+  
+
+
+
+7. Restart IIS (Stop/Start the server)
 
  - Then download and extract the file to your C:\PHP virtual machine folder
 
    - **PHP 7.3.8 Non-Thread Safe (VC15, x86)**  
-     https://php.watch/versions/7.3/releases/7.3.8  
+     https://windows.php.net/downloads/releases/archives/php-7.3.8-nts-Win32-VC15-x64.zip
      _If osTicket is the software we're using then PHP is the language that runs the software._
 
  - After downloading, since the files are not compressed you can just copy and paste the contents of "PHP 7.3.8" into your "PHP" folder in your C: drive.
@@ -182,7 +198,7 @@ Finally review and create the Virtual Machine!!!
    ![image](https://github.com/user-attachments/assets/8bb1f723-37a1-4972-ae31-7ed71c512a9a)
 
 
- - Similarly with visual studio
+ - Similarly with visual studio just follow through the prompts
 
    - **Microsoft Visual C++ Redistributable 2015 (x86)**  
      https://www.microsoft.com/en-us/download/details.aspx?id=48145  
@@ -281,25 +297,4 @@ Finally review and create the Virtual Machine!!!
    - DB Password: `root`
 4. Click "Install Now"
 
----
 
-## Post-Install Cleanup
-
-1. Delete folder: `C:\inetpub\wwwroot\osTicket\setup`
-2. Change permissions of `ost-config.php` to Read-only
-
----
-
-## Access Links
-
-- Admin Portal: `http://localhost/osTicket/scp/login.php`
-- User Portal: `http://localhost/osTicket/`
-
----
-
-## Why This Project Matters
-
-- Demonstrates deployment of full-stack web apps
-- Shows ability to configure virtual machines and services in Azure
-- Familiarizes you with IIS, PHP, and MySQL
-- Aligns with IT Support, Help Desk, SysAdmin, and Cloud Support roles

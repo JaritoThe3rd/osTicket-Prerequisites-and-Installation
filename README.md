@@ -343,21 +343,42 @@ Finally review and create the Virtual Machine!!!
    
 ![image](https://github.com/user-attachments/assets/3b281775-3330-47d2-9c72-09157d241291)
 
+- Then select "Apply" and "Ok"
 
+9. You should be able to continue onto the osTicket browser and put in your credentials
+
+
+![image](https://github.com/user-attachments/assets/7b655ca5-2bb2-4e73-b494-55d50a3fd4d9)
+
+
+![image](https://github.com/user-attachments/assets/afcd0243-45ce-426a-a322-4da142d83efe)
+
+
+10. Start filling out your information
+
+
+![image](https://github.com/user-attachments/assets/a4022fa3-942c-404e-8de8-8c7850083975)
+
+    
 ---
 
 ### 11. Set Up the Database
 
-1. Install HeidiSQL
-2. Open and create a new session:
-   - Username: `root`
-   - Password: `root`
-3. Connect and create a new database called: `osTicket`
-
-
-   - **HeidiSQL (Latest Stable Installer)**  
+  - **HeidiSQL (Latest Stable Installer)**  
      https://www.heidisql.com/download.php  
      _Instead of using command-like SQL, it gives you a GUI to create databases and manage data it's basically similar to file explorer, but for MySQL._
+
+    
+1. Install HeidiSQL and after that we're making a setup for our osTicket Database
+2. Open and create a new session:
+   - Username: `tool`
+   - Password: `tool`
+
+
+![image](https://github.com/user-attachments/assets/fa416993-61b8-406a-97bf-8c71bfd0c383)
+
+
+3. Connect and create a new database called: `osTicket`
 
 
 ---
@@ -370,8 +391,8 @@ Finally review and create the Virtual Machine!!!
    - Admin email and credentials
 3. Database details:
    - DB Name: `osTicket`
-   - DB User: `root`
-   - DB Password: `root`
+   - DB User: `tool`
+   - DB Password: `tool`
 4. Click "Install Now"
 
 

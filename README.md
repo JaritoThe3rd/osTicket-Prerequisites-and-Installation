@@ -22,11 +22,26 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+1. Microsoft Azure Account (I recommend using pay-as-you-go compared to monthly subscription)
+2. Azure Virtual Machine (Ideally Windows 10 despite Windows 11's existence, Use 4 vCPU's)
+3. Azure Virtual Machine Account (Name it as osticket-vm)
+   - Name: `osticket-vm`
+   - Username: `ticketuser`
+   - Password: `osTicket`
+
+4. Remote Desktop Client (Azure will provide a client file if you're connecting to the VM)
+5. osTicket Requirements
+  - ### Download Links
+
+| Filename                              | Source                                         |
+|---------------------------------------|------------------------------------------------|
+| PHP Manager for IIS (.msi)            | Official IIS Community download :contentReference[oaicite:23]{index=23} |
+| URL Rewrite Module 2.1 (x64 .msi)    | Official IIS download :contentReference[oaicite:24]{index=24} |
+| PHP 7.3.8 NTS (x86) zip               | windows.php.net archive :contentReference[oaicite:25]{index=25} |
+| MySQL 5.5.62 Windows MSI              | mysql.com archive mirror :contentReference[oaicite:26]{index=26} |
+| VC++ 2015 Redistributable (x86)       | Microsoft download page :contentReference[oaicite:27]{index=27} |
+| osTicket v1.15.8 zip                 | osTicket official site :contentReference[oaicite:28]{index=28} |
+| HeidiSQL installer                   | HeidiSQL official site :contentReference[oaicite:29]{index=29} |
 
 <h2>Installation Steps</h2>
 

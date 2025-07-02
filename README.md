@@ -164,10 +164,22 @@ Finally review and create the Virtual Machine!!!
 ### 5. Set Up PHP
 
 1. Create a folder: `C:\PHP`
-2. Extract or copy and paste `php-7.3.8-nts-Win32-VC15-x86.zip` into `C:\PHP`
-3. Open IIS Manager from your windows search bar by typing "IIS" (as Administrator)
+2. Download and extract the file to your "C:\PHP" virtual machine folder
 
-4. Select PHP Manager
+   - **PHP 7.3.8 Non-Thread Safe (VC15, x86)**  
+     https://windows.php.net/downloads/releases/archives/php-7.3.8-nts-Win32-VC15-x64.zip
+     _If osTicket is the software we're using then PHP is the language that runs the software._
+
+ - After downloading, since the files are not compressed you can just copy and paste the contents of "PHP 7.3.8" into your "PHP" folder in your C: drive.
+
+
+   ![image](https://github.com/user-attachments/assets/8bb1f723-37a1-4972-ae31-7ed71c512a9a)
+
+
+3. Extract or copy and paste `php-7.3.8-nts-Win32-VC15-x86.zip` into `C:\PHP`
+4. Open IIS Manager from your windows search bar by typing "IIS" (as Administrator)
+
+5. Select PHP Manager
 
 
 ![{79F09B67-629A-4793-90A2-9DA120DF4C22}](https://github.com/user-attachments/assets/9da57d71-df45-4f3f-995c-37bd80d7d7d5)
@@ -180,25 +192,16 @@ Finally review and create the Virtual Machine!!!
 
    - Path: `C:\PHP\php-cgi.exe`
 
-  
-
-
 
 7. Restart IIS (Stop/Start the server)
 
- - Then download and extract the file to your C:\PHP virtual machine folder
 
-   - **PHP 7.3.8 Non-Thread Safe (VC15, x86)**  
-     https://windows.php.net/downloads/releases/archives/php-7.3.8-nts-Win32-VC15-x64.zip
-     _If osTicket is the software we're using then PHP is the language that runs the software._
-
- - After downloading, since the files are not compressed you can just copy and paste the contents of "PHP 7.3.8" into your "PHP" folder in your C: drive.
+   ![image](https://github.com/user-attachments/assets/42f0b863-a582-4563-8f1e-9cbc4e8404fa)
 
 
-   ![image](https://github.com/user-attachments/assets/8bb1f723-37a1-4972-ae31-7ed71c512a9a)
+   ![image](https://github.com/user-attachments/assets/995d6c51-ae55-476b-9bf6-470f5b56b37d)
 
-
- - Similarly with visual studio just follow through the prompts
+- Similarly with visual studio just follow through the prompts
 
    - **Microsoft Visual C++ Redistributable 2015 (x86)**  
      https://www.microsoft.com/en-us/download/details.aspx?id=48145  

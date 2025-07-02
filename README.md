@@ -230,8 +230,22 @@ Finally review and create the Virtual Machine!!!
   
 1. Download and Extract `osTicket-v1.15.8.zip`
 2. Copy the `upload` folder to `C:\inetpub\wwwroot`
-3. Rename `upload` to `osTicket`
+
+
+![image](https://github.com/user-attachments/assets/50354dd7-a825-4819-bb53-d7f3a2e3ab1c)
+
+   
+3. Rename `upload` to `osTicket` (Spelling is really important make sure it is exactly named similarly)
+
+
+![image](https://github.com/user-attachments/assets/71611b8f-fd91-427d-b6e5-d11ae8782e37)
+
+   
 4. Restart IIS
+
+
+![image](https://github.com/user-attachments/assets/99a8bfc8-a3a1-49e1-8167-5d3eb94cffd0)
+
 
 ---
 
@@ -239,8 +253,18 @@ Finally review and create the Virtual Machine!!!
 
 1. In IIS Manager:
    - Navigate to Sites > Default Web Site > osTicket
+
+
+![image](https://github.com/user-attachments/assets/3ba9abdb-0c49-421f-b5c9-af6275c73964)
+
+
    - Click "Browse *:80"
-2. This opens osTicket at: `http://localhost/osTicket`
+
+  
+![image](https://github.com/user-attachments/assets/637feec2-fecf-43ca-8373-b2cc6083b176)
+
+     
+1. This opens osTicket at: `http://localhost/osTicket`
 
 ---
 
@@ -248,11 +272,34 @@ Finally review and create the Virtual Machine!!!
 
 1. In IIS, go to osTicket > PHP Manager
 2. Click "Enable or disable an extension"
-3. Enable:
+
+
+![image](https://github.com/user-attachments/assets/fb68b2f8-a605-44e9-bfd1-c08475238ba7)
+
+   
+3. Enable: (Use the filter search bar to find them easily)
    - `php_imap.dll`
+
+![image](https://github.com/user-attachments/assets/9c03f217-9c9f-43b5-ab35-79472831e717)
+
+
+
    - `php_intl.dll`
+
+
+![image](https://github.com/user-attachments/assets/d337df92-cad8-4dfb-921d-c553f3c3cf9d)
+
+     
    - `php_opcache.dll`
-4. Refresh osTicket in your browser
+
+
+![image](https://github.com/user-attachments/assets/375347b1-7927-49a8-8565-d487fd2e9f5e)
+
+
+3. Refresh osTicket in your browser (You should notice that some requirements have been checked)
+
+
+![image](https://github.com/user-attachments/assets/f9c9019b-9efa-4803-ac54-e57345db7da6)
 
 
 ---

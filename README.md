@@ -31,25 +31,42 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 4. Remote Desktop Client (Azure will provide a client file if you're connecting to the VM)
 5. osTicket Requirements
+
+   
   - **PHP Manager for IIS (v1.5.0)**
+    
     -> https://www.iis.net/downloads/community/2018/05/php-manager-150-for-iis-10
-    "Similar to"
+    
+    "Think about it as a BIOS interface for PHP where it let's you toggle the settings instead of scouring through the raw config files and manually editing them each which is a big hassle."
+    
   - **URL Rewrite Module 2.1 (x64)**
+    
     -> https://www.iis.net/downloads/microsoft/url-rewrite
+
+    "This is more like a GPS routing system for the website it will literally identify cleanly map URL's."
     
   - **PHP 7.3.8 Non-Thread Safe (VC15, x86)**
+    
     -> https://windows.php.net/downloads/releases/php-7.3.8-nts-Win32-VC15-x86.zip
+
+    "If osTicket is the software we're using then PHP is the language that runs the software."
     
   - **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**
+    
     -> https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi
+
+    ""
     
   - **Microsoft Visual C++ Redistributable 2015 (x86)**
+    
     -> https://www.microsoft.com/en-us/download/details.aspx?id=48145
     
   - **osTicket v1.15.8**
+    
     -> https://osticket.com/osticket-v1-15-8-v1-16-3-available/
     
   - **HeidiSQL (Latest Stable Installer)**
+    
     -> https://www.heidisql.com/download.php
     
 

@@ -161,8 +161,23 @@ Finally review and create the Virtual Machine!!!
      https://www.microsoft.com/en-us/download/details.aspx?id=48145  
      _This is a device driver for PHP and MySQL that will make everything run well together._
 
+### 5. Install MySQL
 
-### 5. Set Up PHP
+1. Run the file that you just downloaded `mysql-5.5.62-win32.msi`
+2. Choose Typical Setup
+3. After install, run Configuration Wizard
+4. Use Standard Configuration then Install as Window service
+5. Credentials: (Reason we have similar user and pass is to avoid errors)
+   - Username: `tool`
+   - Password: `tool`
+6. Then Execute
+
+- **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**  
+     https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi  
+     _It's basically the storage and filing system where it stores all the tickets, users, logs, and settings._
+
+---
+### 6. Set Up PHP
 
 1. Create a directory in C:\PHP in your virtual machine
 
@@ -207,26 +222,13 @@ Finally review and create the Virtual Machine!!!
 
 ---
 
-### 6. Install MySQL
-
-1. Run the file that you just downloaded `mysql-5.5.62-win32.msi`
-2. Choose Typical Setup
-3. After install, run Configuration Wizard
-4. Use Standard Configuration then Install as Window service
-5. Credentials: (Reason we have similar user and pass is to avoid errors)
-   - Username: `tool`
-   - Password: `tool`
-6. Then Execute
-
-- **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**  
-     https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi  
-     _It's basically the storage and filing system where it stores all the tickets, users, logs, and settings._
-
----
-
 ### 7. Deploy osTicket Files
 
-1. Extract `osTicket-v1.15.8.zip`
+- **osTicket v1.15.8**  
+     https://github.com/osTicket/osTicket/releases/tag/v1.15.8
+     _The main software help desk web application that connects everything that you've installed._
+  
+1. Download and Extract `osTicket-v1.15.8.zip`
 2. Copy the `upload` folder to `C:\inetpub\wwwroot`
 3. Rename `upload` to `osTicket`
 4. Restart IIS
@@ -251,10 +253,6 @@ Finally review and create the Virtual Machine!!!
    - `php_intl.dll`
    - `php_opcache.dll`
 4. Refresh osTicket in your browser
-
-     - **osTicket v1.15.8**  
-     https://osticket.com/osticket-v1-15-8-v1-16-3-available/  
-     _The main software help desk web application that connects everything that you've installed._
 
 
 ---

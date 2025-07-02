@@ -80,7 +80,7 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 
 ## ⚙️ Step-by-Step Setup Guide
 
-- Make sure to create a Microsoft Azure Account (Please don't user your school email ideally work email related or personal email account)
+- Make sure to create a Microsoft Azure Account (Please don't use your school email ideally work email related or personal email account)
 
 ### 1️⃣ Create an Azure Virtual Machine
 

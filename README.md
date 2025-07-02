@@ -163,7 +163,10 @@ Finally review and create the Virtual Machine!!!
      https://php.watch/versions/7.3/releases/7.3.8  
      _If osTicket is the software we're using then PHP is the language that runs the software._
 
-     
+ - After downloading since the files are not compressed you can just copy and paste the contents of "PHP 7.3.8" into your "PHP" folder in your C: drive.
+
+   ![image](https://github.com/user-attachments/assets/8bb1f723-37a1-4972-ae31-7ed71c512a9a)
+
    
 ---
 

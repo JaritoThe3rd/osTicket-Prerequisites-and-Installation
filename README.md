@@ -76,7 +76,7 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 - Username: labuser
 - Password: osTicketPassword1!
 - Make sure to check the box for Licensing at the very bottom of the first section of virtual machine creation.
-- ![{47451417-C967-4242-AD56-A041AA736D31}](https://github.com/user-attachments/assets/4cc3def8-92be-4770-ae78-a7e3ecac6193)
+![{47451417-C967-4242-AD56-A041AA736D31}](https://github.com/user-attachments/assets/4cc3def8-92be-4770-ae78-a7e3ecac6193)
 
 
 
@@ -94,9 +94,25 @@ Finally review and create the Virtual Machine!!!
 
 ---
 
-### 2. Connect to the VM
+### 2. Log in to Connect to the VM
+- You need to check the notification section to check if it's actually deployed or not. (Sometimes it will keep telling you that the deployment is in progress even thou it was already deployed)
+
+  ![{CB9D9916-92B7-489D-AC06-60929E434CC4}](https://github.com/user-attachments/assets/191ec13b-2953-4906-8f36-86097206a5fe)
+
 
 - Use Remote Desktop to log in using your Azure VM credentials.
+- Navigate your way towards the Azure Dashboard -> Virtual Machine -> Selecting osticket-vm -> Select Connect
+  
+![{7EFED89A-A98D-4595-B9AB-B52133FEABE5}](https://github.com/user-attachments/assets/3aca1827-7c31-4292-a58b-8b4a814eecae)
+
+- Then download the RDP client file to connect to your Virtual machine
+  
+  ![{2E1BA7B0-39D3-45CE-9D34-97458295025F}](https://github.com/user-attachments/assets/cc092821-de8f-49ee-8a97-06c712d1ab64)
+
+- Select the downloaded RDP client file
+  
+  ![{435A76CA-6CD4-41D3-AC52-C8C9AB10F94E}](https://github.com/user-attachments/assets/8f84a109-1b23-4faa-b7c5-00c79830ea5b)
+  
 
 ---
 

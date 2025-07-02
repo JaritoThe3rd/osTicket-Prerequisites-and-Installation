@@ -147,7 +147,7 @@ Finally review and create the Virtual Machine!!!
 
 ### 4. Install the following Prerequisites in proper order within your Virtual Machine.
 
-- **PHP Manager for IIS (v1.5.0)**  
+ - **PHP Manager for IIS (v1.5.0)**  
      https://github.com/RonaldCarter/PHPManager/releases/tag/V1.5.0
      _Think about it as a BIOS interface for PHP where it let's you toggle the settings instead of scouring through the raw config files and manually editing them each which is a big hassle._
   
@@ -155,16 +155,22 @@ Finally review and create the Virtual Machine!!!
      https://www.iis.net/downloads/microsoft/url-rewrite  
      _This is more like a GPS routing system for the website it will literally identify cleanly map URL's._
 
- - Create a directory in C:\PHP of your virtual machine
+    Similarly with visual studio just follow through the prompts
 
-
-   ![{778D91C9-C03A-4B88-A1FE-E5E7C1B7D5FC}](https://github.com/user-attachments/assets/3576a598-40df-477e-a6d3-b786d113cf3b)
+ - **Microsoft Visual C++ Redistributable 2015 (x86)**  
+     https://www.microsoft.com/en-us/download/details.aspx?id=48145  
+     _This is a device driver for PHP and MySQL that will make everything run well together._
 
 
 ### 5. Set Up PHP
 
-1. Create a folder: `C:\PHP`
-2. Download and extract the file to your "C:\PHP" virtual machine folder
+1. Create a directory in C:\PHP in your virtual machine
+
+
+   ![{778D91C9-C03A-4B88-A1FE-E5E7C1B7D5FC}](https://github.com/user-attachments/assets/3576a598-40df-477e-a6d3-b786d113cf3b)
+
+   
+2. Extract or copy and paste `php-7.3.8-nts-Win32-VC15-x86.zip` into `C:\PHP`
 
    - **PHP 7.3.8 Non-Thread Safe (VC15, x86)**  
      https://windows.php.net/downloads/releases/archives/php-7.3.8-nts-Win32-VC15-x64.zip
@@ -176,24 +182,21 @@ Finally review and create the Virtual Machine!!!
    ![image](https://github.com/user-attachments/assets/8bb1f723-37a1-4972-ae31-7ed71c512a9a)
 
 
-3. Extract or copy and paste `php-7.3.8-nts-Win32-VC15-x86.zip` into `C:\PHP`
-4. Open IIS Manager from your windows search bar by typing "IIS" (as Administrator)
+3. Open IIS Manager from your windows search bar by typing "IIS" (as Administrator)
 
-5. Select PHP Manager
-
-
-![{79F09B67-629A-4793-90A2-9DA120DF4C22}](https://github.com/user-attachments/assets/9da57d71-df45-4f3f-995c-37bd80d7d7d5)
+4. Select PHP Manager
 
 
-5. Use PHP Manager to register PHP by browsing the file "php-cgi.exe":
-
-![image](https://github.com/user-attachments/assets/956cc205-b29b-4922-8cc4-9d0dc6948bef)
+   ![{79F09B67-629A-4793-90A2-9DA120DF4C22}](https://github.com/user-attachments/assets/9da57d71-df45-4f3f-995c-37bd80d7d7d5)
 
 
-   - Path: `C:\PHP\php-cgi.exe`
+5. Use PHP Manager to register PHP by browsing the file "php-cgi.exe" the Path: `C:\PHP\php-cgi.exe`
 
 
-7. Restart IIS (Stop/Start the server)
+   ![image](https://github.com/user-attachments/assets/956cc205-b29b-4922-8cc4-9d0dc6948bef)
+
+
+6. Restart IIS once it is confirmed your php-cgi.exe is detected (Stop/Start the server)
 
 
    ![image](https://github.com/user-attachments/assets/42f0b863-a582-4563-8f1e-9cbc4e8404fa)
@@ -201,11 +204,6 @@ Finally review and create the Virtual Machine!!!
 
    ![image](https://github.com/user-attachments/assets/995d6c51-ae55-476b-9bf6-470f5b56b37d)
 
-- Similarly with visual studio just follow through the prompts
-
-   - **Microsoft Visual C++ Redistributable 2015 (x86)**  
-     https://www.microsoft.com/en-us/download/details.aspx?id=48145  
-     _This is a device driver for PHP and MySQL that will make everything run well together._
 
 ---
 

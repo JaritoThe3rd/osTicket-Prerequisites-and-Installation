@@ -4,13 +4,14 @@
 
 # 🎫 osTicket Installation on Azure Windows 10 VM
 
-This is a walkthrough on installing **osTicket**, a popular open-source help desk ticketing system, ideally on a **Windows 10 virtual machine using Microsoft Azure Services**. This will help you understand and demonstrate on your skills in cloud infrastructure, Windows server configuration, and web-based application deployment - all of which are relevant for Help Desk and Cloud roles.
+This is a walkthrough on installing **osTicket**, a popular open-source help desk ticketing system, ideally on a **Windows 10 virtual machine using Microsoft Azure Services** (This guide will get really messy if you use Windows 11 unless if you're good at navigating in the new updated Windows 11). This will help you understand and demonstrate on your skills in cloud infrastructure, Windows server configuration, and web-based application deployment - all of which are relevant for Help Desk and Cloud roles.
 
 ---
 
 <h2>Video Demonstration</h2>
 
 - ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+  
 
 <h2>Environments and Technologies Used</h2>
 
@@ -78,24 +79,9 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
     "Instead of using command-like SQL, it gives you a GUI to create databases and manage data it's basically similar to file explorer, but for MySQL."
     
 
-## 💻 What You'll Need
-
-- A **Microsoft Azure account**
-- Basic knowledge of RDP and Windows OS
-- A copy of the required installation files:
-  - PHP Manager for IIS
-  - Rewrite Module
-  - PHP 7.3.8 (Non-Thread Safe)
-  - MySQL 5.5.62
-  - VC++ Redistributable 2015 (x86)
-  - osTicket v1.15.8
-  - HeidiSQL
-
-🔗 [Click here for download links and file explanations](#📁-required-files--downloads)
-
----
-
 ## ⚙️ Step-by-Step Setup Guide
+
+- Make sure to create a Microsoft Azure Account (Please don't user your school email ideally work email related or personal email account)
 
 ### 1️⃣ Create an Azure Virtual Machine
 

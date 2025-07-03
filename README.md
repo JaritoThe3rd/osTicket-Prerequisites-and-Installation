@@ -395,7 +395,13 @@ Finally review and create the Virtual Machine!!!
    - DB Name: `osTicket`
    - DB User: `tool`
    - DB Password: `tool`
-4. Click "Install Now"
+4. Click "Install Now" and make sure that the osTicket database actually pops out of the left side panel inside the osTicket
+
+
+![image](https://github.com/user-attachments/assets/70b0b483-7008-4e26-bea1-75e79188cf5a)
+
+![{AA8D50D5-663A-4F27-BDD3-B4582E24C488}](https://github.com/user-attachments/assets/9800be73-2583-488d-b2da-923a3f2ab1b7)
+
 
 ![{793543D6-8CB6-4BA3-A8D5-BF2FA2F95817}](https://github.com/user-attachments/assets/8d5ae42a-857a-4910-9d0c-c3f5f023b31a)
 

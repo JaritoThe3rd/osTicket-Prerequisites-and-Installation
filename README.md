@@ -52,7 +52,7 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 - Virtual Machine Name: Name it as "osticket-vm"
 - Region: I choose East US 2 (That totally depends where you are in the world pick ones that are the closest to your region obviously)
 - Image: Windows 10 Pro, version 22H2 - x64 Gen2 (Please don't do Windows 11 since the tutorial mainly focuses on Windows 10)
-- Size: Standard_D2s_v3 - 2 vcpus, 8 GiB memory ($70.08/month) (The monthly fee only charges you if you run it 24/7 as long as you turned it off after each use you're fine. Unless if you're working with corporations)
+- Size: Standard_D4s_v3 - 4 vcpus, 16 GiB memory ($140.16/month) ($70.08/month) (The monthly fee only charges you if you run it 24/7 as long as you turned it off after each use you're fine. Unless if you're working with corporations)
 
   
 - Username: labuser
@@ -149,6 +149,7 @@ Finally review and create the Virtual Machine!!!
 
  - **PHP Manager for IIS (v1.5.0)**  
      https://github.com/RonaldCarter/PHPManager/releases/tag/V1.5.0
+   
      _Think about it as a BIOS interface for PHP where it let's you toggle the settings instead of scouring through the raw config files and manually editing them each which is a big hassle._
   
  - **URL Rewrite Module 2.1 (x64)**  
@@ -163,20 +164,21 @@ Finally review and create the Virtual Machine!!!
 
 ### 5. Install MySQL
 
+- **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**  
+     https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi  
+     _It's basically the storage and filing system where it stores all the tickets, users, logs, and settings._
+
 1. Run the file that you just downloaded `mysql-5.5.62-win32.msi`
 2. Choose Typical Setup
 3. After install, run Configuration Wizard
 4. Use Standard Configuration then Install as Window service
 5. Credentials: (Reason we have similar user and pass is to avoid errors)
-   - Username: `tool`
-   - Password: `tool`
+   - Username: `root`
+   - Password: `root`
 6. Then Execute
-
-- **MySQL Community Server 5.5.62 (Windows, 32‑bit MSI)**  
-     https://cdn.mysql.com//Downloads/MySQL-5.5/mysql-5.5.62-win32.msi  
-     _It's basically the storage and filing system where it stores all the tickets, users, logs, and settings._
-
+   
 ---
+
 ### 6. Set Up PHP
 
 1. Create a directory in C:\PHP in your virtual machine
@@ -306,7 +308,7 @@ Finally review and create the Virtual Machine!!!
 
 ### 10. Rename and Secure Config File
 
-1. Rename:
+1. Rename: (Fastest way to search is to use the top right search bar while you selected C:\ drive)
    - From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`
    - To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`
 2. Set permissions:
@@ -370,9 +372,9 @@ Finally review and create the Virtual Machine!!!
 
     
 1. Install HeidiSQL and after that we're making a setup for our osTicket Database
-2. Open and create a new session: (There's a chance that even if you input the right USERNAME and PASSWORD that the virtual machine needs to be restarted since that database is not really established yet.)
-   - Username: `tool`
-   - Password: `tool`
+2. Open and create a new session: (There's a chance that even if you input the right USERNAME and PASSWORD that the virtual machine needs to be restarted since that database is not really established yet. Worse thing yet, you might need to redo the entire virtual machine process if you can't narrow down the problem. Especially if it's not PERMISSION related or ACCOUNT NAME related or PREREQUISITES related. You have no choice if it doesn't come from those I mentioned)
+   - Username: `root`
+   - Password: `root`
 
 
 ![image](https://github.com/user-attachments/assets/fa416993-61b8-406a-97bf-8c71bfd0c383)
@@ -395,4 +397,6 @@ Finally review and create the Virtual Machine!!!
    - DB Password: `tool`
 4. Click "Install Now"
 
+![{793543D6-8CB6-4BA3-A8D5-BF2FA2F95817}](https://github.com/user-attachments/assets/8d5ae42a-857a-4910-9d0c-c3f5f023b31a)
 
+5. If you did everything properly or redo it. You should be golden and ready to go.

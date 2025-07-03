@@ -406,3 +406,25 @@ Finally review and create the Virtual Machine!!!
 ![{793543D6-8CB6-4BA3-A8D5-BF2FA2F95817}](https://github.com/user-attachments/assets/8d5ae42a-857a-4910-9d0c-c3f5f023b31a)
 
 5. If you did everything properly or redo it. You should be golden and ready to go.
+
+6. Log in URL as an admin for osTicket:
+  
+http://localhost/osTicket/scp/login.php
+
+![image](https://github.com/user-attachments/assets/7e47d65a-0807-4223-a4fa-e3d5bc1644fd)
+
+   
+7. Log in for end users for osTicket:
+
+
+ http://localhost/osTicket/ 
+
+
+![image](https://github.com/user-attachments/assets/20990566-8b31-46e2-a2fe-e8bb388ec4ee)
+
+
+8. Clean up
+Delete: C:\inetpub\wwwroot\osTicket\setup
+Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+##You're done with the set up!!!##

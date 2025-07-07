@@ -60,10 +60,9 @@ This is a walkthrough on installing **osTicket**, a popular open-source help des
 - Make sure to check the box for Licensing at the very bottom of the first section of virtual machine creation.
   
   
-![{47451417-C967-4242-AD56-A041AA736D31}](https://github.com/user-attachments/assets/4cc3def8-92be-4770-ae78-a7e3ecac6193)
 
+https://github.com/user-attachments/assets/43231d35-ea6c-4367-9a1e-463fdc2e57a9
 
-![{88030348-784F-40BE-8F33-CDBC6AD5C14F}](https://github.com/user-attachments/assets/67574a01-0517-4c97-9d6d-6f9e2eb6f37c)
 
 
 Now onto the next section skip the "Disk" of Virtual Machine creation goto "Networking" section 

@@ -284,12 +284,10 @@ https://github.com/user-attachments/assets/0b0fd8fb-160c-4178-a6bf-31922acc527b
 2. Open and create a new session: (There's a chance that even if you input the right USERNAME and PASSWORD that the virtual machine needs to be restarted since that database is not really established yet. Worse thing yet, you might need to redo the entire virtual machine process if you can't narrow down the problem. Especially if it's not PERMISSION related or ACCOUNT NAME related or PREREQUISITES related. You have no choice if it doesn't come from those I mentioned)
    - Username: `root`
    - Password: `root`
-
-
-![image](https://github.com/user-attachments/assets/fa416993-61b8-406a-97bf-8c71bfd0c383)
-
-
 3. Connect and create a new database called: `osTicket`
+
+
+https://github.com/user-attachments/assets/5b3436d7-40aa-4333-abad-bd3dbd426908
 
 
 ---
@@ -302,34 +300,22 @@ https://github.com/user-attachments/assets/0b0fd8fb-160c-4178-a6bf-31922acc527b
    - Admin email and credentials
 3. Database details:
    - DB Name: `osTicket`
-   - DB User: `tool`
-   - DB Password: `tool`
+   - DB User: `root`
+   - DB Password: `root`
 4. Click "Install Now" and make sure that the osTicket database actually pops out of the left side panel inside the osTicket
-
-
-![image](https://github.com/user-attachments/assets/70b0b483-7008-4e26-bea1-75e79188cf5a)
-
-![{AA8D50D5-663A-4F27-BDD3-B4582E24C488}](https://github.com/user-attachments/assets/9800be73-2583-488d-b2da-923a3f2ab1b7)
-
-
-![{793543D6-8CB6-4BA3-A8D5-BF2FA2F95817}](https://github.com/user-attachments/assets/8d5ae42a-857a-4910-9d0c-c3f5f023b31a)
-
 5. If you did everything properly or redo it. You should be golden and ready to go.
-
 6. Log in URL as an admin for osTicket:
   
 http://localhost/osTicket/scp/login.php
-
-![image](https://github.com/user-attachments/assets/7e47d65a-0807-4223-a4fa-e3d5bc1644fd)
-
    
 7. Log in for end users for osTicket:
 
 
- http://localhost/osTicket/ 
+http://localhost/osTicket/ 
 
 
-![image](https://github.com/user-attachments/assets/20990566-8b31-46e2-a2fe-e8bb388ec4ee)
+https://github.com/user-attachments/assets/63954a09-6dce-46ed-ac16-f87d549a05c6
+
 
 
 8. Clean up

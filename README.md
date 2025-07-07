@@ -201,22 +201,12 @@ https://github.com/user-attachments/assets/506ccc03-51ea-4e65-9b14-2ce0dcdf316c
      _The main software help desk web application that connects everything that you've installed._
   
 1. Download and Extract `osTicket-v1.15.8.zip`
-2. Copy the `upload` folder to `C:\inetpub\wwwroot`
-
-
-![image](https://github.com/user-attachments/assets/50354dd7-a825-4819-bb53-d7f3a2e3ab1c)
-
-   
+2. Copy the `upload` folder to `C:\inetpub\wwwroot` 
 3. Rename `upload` to `osTicket` (Spelling is really important make sure it is exactly named similarly)
-
-
-![image](https://github.com/user-attachments/assets/71611b8f-fd91-427d-b6e5-d11ae8782e37)
-
-   
 4. Restart IIS
 
 
-![image](https://github.com/user-attachments/assets/99a8bfc8-a3a1-49e1-8167-5d3eb94cffd0)
+https://github.com/user-attachments/assets/75304be1-1c77-45a5-92ac-724616513475
 
 
 ---

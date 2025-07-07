@@ -102,13 +102,8 @@ https://github.com/user-attachments/assets/864de83b-5fd4-4813-ad53-274c42427396
 
 - Navigate towards the Control Panel and Select Programs
 
-![image](https://github.com/user-attachments/assets/cb668e09-6d85-4a7d-80cd-ec0a35400e5f)
-
 
 - Then select "Turn Windows features on or off"
-
-
-  ![{6AF31233-70B6-42BB-9448-478B447B2334}](https://github.com/user-attachments/assets/ddc81e83-9de4-4b85-9465-b49f0831475c)
 
 
 - Scroll Through "Internet Information Services (IIS)"
@@ -116,11 +111,9 @@ https://github.com/user-attachments/assets/864de83b-5fd4-4813-ad53-274c42427396
   - Internet Information Services (IIS)
   - World Wide Web Services → Application Development Features → CGI
 
-    
-![image](https://github.com/user-attachments/assets/4613881d-469b-4efb-b118-d7265b74bc0c)
 
 
-![{B2D786BA-A7BF-41A0-9DEA-54F269BEB94F}](https://github.com/user-attachments/assets/090ce3b8-4011-442a-9fa9-30f414490d75)
+https://github.com/user-attachments/assets/d0fb6be3-b319-44de-b13d-97291f206b2d
 
 
 ---

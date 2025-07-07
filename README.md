@@ -257,54 +257,18 @@ Uploading 2025-07-07 09-51-27.mp4…
    - From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`
    - To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`
 2. Set permissions:
-
 3. Right click the file `ost-config.php` then select properties.
-
-   
-![image](https://github.com/user-attachments/assets/04f98e9b-8b4e-42f9-9173-9a72244c3407)
-   
 4. Then "Security" and select "Advance"
-
-
-![image](https://github.com/user-attachments/assets/1d2fdb01-988b-49b1-9d31-6903da7b32fb)
-
 5. Disable inheritance, remove all users
-
-
-![image](https://github.com/user-attachments/assets/7fcafc35-7bc4-4cce-b775-b758e7449d9c)
-
-
 6. Select Remove all
-
-
-![{94A66D8D-0CD3-4FAB-9BB3-CC1E66719B46}](https://github.com/user-attachments/assets/fc353b04-cc47-49fb-baff-a9779edf3819)
-
 7. Select "Add" then on the top left select "Select a principal" then type within the box "everyone"
-
-   
-![image](https://github.com/user-attachments/assets/f08e4476-e87f-4b36-a17e-e57c2bfab2af)
-
-
 8. After adding `Everyone` check the box that says "Full Control"
-
-   
-![image](https://github.com/user-attachments/assets/3b281775-3330-47d2-9c72-09157d241291)
-
 - Then select "Apply" and "Ok"
-
 9. You should be able to continue onto the osTicket browser and put in your credentials
-
-
-![image](https://github.com/user-attachments/assets/7b655ca5-2bb2-4e73-b494-55d50a3fd4d9)
-
-
-![image](https://github.com/user-attachments/assets/afcd0243-45ce-426a-a322-4da142d83efe)
-
-
 10. Start filling out your information
 
 
-![image](https://github.com/user-attachments/assets/a4022fa3-942c-404e-8de8-8c7850083975)
+https://github.com/user-attachments/assets/0b0fd8fb-160c-4178-a6bf-31922acc527b
 
     
 ---

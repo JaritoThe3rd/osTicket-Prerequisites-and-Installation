@@ -156,6 +156,10 @@ https://github.com/user-attachments/assets/a8469a73-b9ed-467b-ac72-791a8260f6ba
    - Password: `root`
 6. Then Execute
    
+
+Uploading 2025-07-07 09-38-11.mp4…
+
+
 ---
 
 ### 6. Set Up PHP

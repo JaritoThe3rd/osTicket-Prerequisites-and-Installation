@@ -166,9 +166,6 @@ Uploading 2025-07-07 09-38-11.mp4…
 
 1. Create a directory in C:\PHP in your virtual machine
 
-
-   ![{778D91C9-C03A-4B88-A1FE-E5E7C1B7D5FC}](https://github.com/user-attachments/assets/3576a598-40df-477e-a6d3-b786d113cf3b)
-
    
 2. Extract or copy and paste `php-7.3.8-nts-Win32-VC15-x86.zip` into `C:\PHP`
 
@@ -179,30 +176,20 @@ Uploading 2025-07-07 09-38-11.mp4…
  - After downloading, since the files are not compressed you can just copy and paste the contents of "PHP 7.3.8" into your "PHP" folder in your C: drive.
 
 
-   ![image](https://github.com/user-attachments/assets/8bb1f723-37a1-4972-ae31-7ed71c512a9a)
-
-
 3. Open IIS Manager from your windows search bar by typing "IIS" (as Administrator)
 
 4. Select PHP Manager
 
 
-   ![{79F09B67-629A-4793-90A2-9DA120DF4C22}](https://github.com/user-attachments/assets/9da57d71-df45-4f3f-995c-37bd80d7d7d5)
-
-
 5. Use PHP Manager to register PHP by browsing the file "php-cgi.exe" the Path: `C:\PHP\php-cgi.exe`
-
-
-   ![image](https://github.com/user-attachments/assets/956cc205-b29b-4922-8cc4-9d0dc6948bef)
 
 
 6. Restart IIS once it is confirmed your php-cgi.exe is detected (Stop/Start the server)
 
 
-   ![image](https://github.com/user-attachments/assets/42f0b863-a582-4563-8f1e-9cbc4e8404fa)
 
+https://github.com/user-attachments/assets/506ccc03-51ea-4e65-9b14-2ce0dcdf316c
 
-   ![image](https://github.com/user-attachments/assets/995d6c51-ae55-476b-9bf6-470f5b56b37d)
 
 
 ---

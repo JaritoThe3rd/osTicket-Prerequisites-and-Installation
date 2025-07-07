@@ -216,17 +216,14 @@ https://github.com/user-attachments/assets/75304be1-1c77-45a5-92ac-724616513475
 1. In IIS Manager:
    - Navigate to Sites > Default Web Site > osTicket
 
-
-![image](https://github.com/user-attachments/assets/3ba9abdb-0c49-421f-b5c9-af6275c73964)
-
-
    - Click "Browse *:80"
 
-  
-![image](https://github.com/user-attachments/assets/637feec2-fecf-43ca-8373-b2cc6083b176)
 
-     
-1. This opens osTicket at: `http://localhost/osTicket`
+2. This opens osTicket at: `http://localhost/osTicket`
+
+
+https://github.com/user-attachments/assets/dda0c04e-23a7-4749-839f-e30d6c0baa06
+
 
 ---
 

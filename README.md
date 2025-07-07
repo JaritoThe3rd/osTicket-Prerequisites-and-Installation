@@ -231,34 +231,22 @@ https://github.com/user-attachments/assets/dda0c04e-23a7-4749-839f-e30d6c0baa06
 
 1. In IIS, go to osTicket > PHP Manager
 2. Click "Enable or disable an extension"
-
-
-![image](https://github.com/user-attachments/assets/fb68b2f8-a605-44e9-bfd1-c08475238ba7)
-
-   
 3. Enable: (Use the filter search bar to find them easily)
    - `php_imap.dll`
 
-![image](https://github.com/user-attachments/assets/9c03f217-9c9f-43b5-ab35-79472831e717)
-
-
 
    - `php_intl.dll`
-
-
-![image](https://github.com/user-attachments/assets/d337df92-cad8-4dfb-921d-c553f3c3cf9d)
 
      
    - `php_opcache.dll`
 
 
-![image](https://github.com/user-attachments/assets/375347b1-7927-49a8-8565-d487fd2e9f5e)
-
-
 3. Refresh osTicket in your browser (You should notice that some requirements have been checked)
 
 
-![image](https://github.com/user-attachments/assets/f9c9019b-9efa-4803-ac54-e57345db7da6)
+
+Uploading 2025-07-07 09-51-27.mp4…
+
 
 
 ---

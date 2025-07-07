@@ -121,12 +121,12 @@ https://github.com/user-attachments/assets/d0fb6be3-b319-44de-b13d-97291f206b2d
 ### 4. Install the following Prerequisites in proper order within your Virtual Machine.
 
  - **PHP Manager for IIS (v1.5.0)**  
-     https://github.com/RonaldCarter/PHPManager/releases/tag/V1.5.0
+     [https://github.com/RonaldCarter/PHPManager/releases/tag/V1.5.0](https://github.com/RonaldCarter/PHPManager/releases/tag/V1.5.0)
    
      _Think about it as a BIOS interface for PHP where it let's you toggle the settings instead of scouring through the raw config files and manually editing them each which is a big hassle._
   
  - **URL Rewrite Module 2.1 (x64)**  
-     https://www.iis.net/downloads/microsoft/url-rewrite  
+     [https://www.iis.net/downloads/microsoft/url-rewrite  ](https://www.iis.net/downloads/microsoft/url-rewrite  )
      _This is more like a GPS routing system for the website it will literally identify cleanly map URL's._
 
     Similarly with visual studio just follow through the prompts
@@ -134,6 +134,12 @@ https://github.com/user-attachments/assets/d0fb6be3-b319-44de-b13d-97291f206b2d
  - **Microsoft Visual C++ Redistributable 2015 (x86)**  
      https://www.microsoft.com/en-us/download/details.aspx?id=48145  
      _This is a device driver for PHP and MySQL that will make everything run well together._
+
+   
+
+https://github.com/user-attachments/assets/a8469a73-b9ed-467b-ac72-791a8260f6ba
+
+
 
 ### 5. Install MySQL
 
